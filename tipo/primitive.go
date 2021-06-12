@@ -109,5 +109,14 @@ func E4_Coercion() {
 }
 
 func E5_Inferencia() {
-
+	var x1 = 10
+	fmt.Println(x1)
+	var x2 = 10.0
+	fmt.Println(x2)
+	var x3 = true
+	fmt.Println(x3)
+	var x4 = "oie"
+	fmt.Println(x4)
+	var x5 = 'a' //Representa todos os caracteres UNICODE
+	fmt.Println(x5)
 }
