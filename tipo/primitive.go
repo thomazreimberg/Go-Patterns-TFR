@@ -104,7 +104,8 @@ func E3_Conversao() {
 }
 
 func E4_Coercion() {
-
+	//var x = "10" + 10
+	fmt.Println("Não existe Coercion na linguagem Go.")
 }
 
 func E5_Inferencia() {
