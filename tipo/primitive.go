@@ -49,11 +49,22 @@ func E1_Declaracao() {
 }
 
 func E2_Alteracao() {
+	var x1 int = 10
+	x1 = 15
+	fmt.Println(x1)
 
+	var x2 string = "oie"
+	x2 = "olá"
+	fmt.Println(x2)
+
+	var x3 int = 10
+	x3 = x1 + 5
+	fmt.Println(x3)
+	//x3 = x1 = 20
 }
 
 func E3_Conversao() {
-
+	
 }
 
 func E4_Coercion() {
