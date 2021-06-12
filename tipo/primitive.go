@@ -1,6 +1,9 @@
 package tipo
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func E1_Declaracao() {
 	//
@@ -46,6 +49,13 @@ func E1_Declaracao() {
 	fmt.Println(x16)
 	var x17 int = -x16 - 1
 	fmt.Println(x17)
+
+	x18 := "Teste string"
+	fmt.Println(x18)
+	x19 := 10
+	fmt.Println(x19)
+	x20 := 10.20
+	fmt.Println(x20)
 }
 
 func E2_Alteracao() {
@@ -60,11 +70,37 @@ func E2_Alteracao() {
 	var x3 int = 10
 	x3 = x1 + 5
 	fmt.Println(x3)
-	//x3 = x1 = 20
+	//x3 = x1 = 20 => error
 }
 
 func E3_Conversao() {
-	
+	var x string = "10.5"
+	var y int = 10
+
+	x0, _ := strconv.ParseBool(x)
+	fmt.Println(x0)
+
+	x1, _ := strconv.Atoi(x)
+	fmt.Println(x1)
+	x2, _ := strconv.ParseInt(x, 8, 8)
+	fmt.Println(x2)
+	x3, _ := strconv.ParseInt(x, 16, 16)
+	fmt.Println(x3)
+	x4, _ := strconv.ParseInt(x, 32, 32)
+	fmt.Println(x4)
+	x5, _ := strconv.ParseInt(x, 64, 64)
+	fmt.Println(x5)
+
+	x6, _ := strconv.ParseFloat(x, 32)
+	fmt.Println(x6)
+	x7, _ := strconv.ParseFloat(x, 64)
+	fmt.Println(x7)
+
+	x8 := string(x)
+	fmt.Println(x8)
+
+	x9 := strconv.Itoa(y)
+	fmt.Println(x9)
 }
 
 func E4_Coercion() {
