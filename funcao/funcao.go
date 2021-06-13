@@ -2,6 +2,7 @@ package funcao
 
 import (
 	"fmt"
+	"time"
 )
 
 func Run() {
@@ -21,13 +22,13 @@ func Run() {
 	E5_FuncoesParaConversao()
 
 	fmt.Println("Procedure")
-	E1_AreaRetangulo()
-	E2_Media()
-	E3_Hipontenusa()
-	E4_PrimeiroNome()
-	E5_PrimeiroDiaProximoMes()
-	E6_AreaRetangulo()
-	E7_Bhaskara()
+	fmt.Println(E1_AreaRetangulo(10,10))
+	fmt.Println(E2_Media(10, 10, 10))
+	fmt.Println(E3_Hipontenusa(4, 5))
+	fmt.Println(E4_PrimeiroNome("Thomaz Henrique"))
+	fmt.Println(E5_PrimeiroDiaProximoMes(time.Now()))
+	fmt.Println(E6_AreaRetangulo(Retangulo { Altura: 10, Base:  10 }))
+	fmt.Println(E7_Bhaskara(10, 10, 10))
 
 	fmt.Println("CompoundProcedure")
 	E1_AreaRetanguloCP()
