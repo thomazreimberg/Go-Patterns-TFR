@@ -8,10 +8,10 @@ import (
 func E1_OperadoresMatematicos() {
 
 	var x1 int = 10 + 10
-	var x2 int = 10 - 10
+	var x2 int = 10 - 11
 	var x3 int = 10 * 10
-	var x4 int = 10 / 10
-	var x5 int = 10 % 10
+	var x4 int = 10 / 20
+	var x5 int = 10 % 20
 	fmt.Println(x1)
 	fmt.Println(x2)
 	fmt.Println(x3)
