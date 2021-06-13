@@ -1,3 +1,4 @@
+//Thomaz
 package funcao
 
 func E1_AreaRetanguloCP() {
