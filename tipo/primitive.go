@@ -1,3 +1,4 @@
+// Thomaz
 package tipo
 
 import (
