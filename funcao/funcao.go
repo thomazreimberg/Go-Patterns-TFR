@@ -42,6 +42,10 @@ func Run() {
 	fmt.Println("Packages")
 	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
+	fmt.Println("Recursive")
+	fmt.Println(E1_Fatorial_Linear(5))
+	fmt.Println(E2_Fatorial_Iterativo(5))
+
 	fmt.Println("HighOrderFunction")
 	E1_FuncoesAnonimas()
 	filtro := func(x int) bool {
