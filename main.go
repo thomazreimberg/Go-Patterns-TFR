@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/Go-Patterns-TFR/funcao"
 	"github.com/Go-Patterns-TFR/rota"
 	"github.com/Go-Patterns-TFR/tipo"

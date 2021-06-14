@@ -36,7 +36,7 @@ func Run() {
 	E3_RetangulosIguais()
 
 	fmt.Println("Packages")
-	E1_CalcularCompra()
+	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
 	fmt.Println("HighOrderFunction")
 	E1_FuncoesAnonimas()
