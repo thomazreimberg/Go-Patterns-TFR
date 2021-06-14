@@ -44,7 +44,13 @@ func Run() {
 
 	fmt.Println("HighOrderFunction")
 	E1_FuncoesAnonimas()
-	E2_ComoParametro_Filter()
-	E3_ComoParametro_Map()
+	filtro := func(x int) bool {
+		return x > 4
+	}
+	fmt.Println(E2_ComoParametro_Filter([]int {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, filtro))
+	mapper := func(x int) int {
+		return x * 4
+	}
+	fmt.Println(E3_ComoParametro_Map([]int {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, mapper))
 	E4_ComoParametro_Correio()
 }
