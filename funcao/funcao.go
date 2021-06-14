@@ -31,9 +31,13 @@ func Run() {
 	fmt.Println(E7_Bhaskara(10, 10, 10))
 
 	fmt.Println("CompoundProcedure")
-	E1_AreaRetanguloCP()
-	E2_RetangulosIguais()
-	E3_RetangulosIguais()
+	fmt.Println(E1_AreaRetanguloCP(2, 10))
+	fmt.Println(E2_RetangulosIguais(Retangulo{ Altura: 2, Base: 10 }, Retangulo{ Altura: 4, Base: 5 }))
+	fmt.Println(E3_RetangulosIguais([]Retangulo {
+		{Altura: 10, Base: 20},
+		{Altura: 20, Base: 10},
+		{Altura: 200, Base: 1},
+	}))
 
 	fmt.Println("Packages")
 	E1_CalcularCompra()
