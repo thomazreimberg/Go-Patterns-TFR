@@ -12,10 +12,10 @@ func Run() {
 	E1_Media(7, 7, 10)
 
 	fmt.Println("Conditional")
-	E1_IF_Aprovado()
-	E2_IF_Aprovado()
-	E3_Switch_Avaliacao()
-	E4_Switch_Avaliacao()
+	fmt.Println(E1_IF_Aprovado(3.3))
+	fmt.Println(E2_IF_Aprovado(6, 29))
+	fmt.Println(E3_Switch_Avaliacao("A"))
+	fmt.Println(E4_Switch_Avaliacao("E"))
 
 	fmt.Println("CompoundConditional")
 	E1_ParOuImpar(10, 3, "Par", "Ímpar")
