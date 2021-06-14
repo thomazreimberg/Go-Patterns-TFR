@@ -1,4 +1,3 @@
-// Felipe
 package funcao
 
 import (
