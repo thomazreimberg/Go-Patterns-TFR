@@ -1,3 +1,4 @@
+//Thomaz
 package rota
 
 func E1_FOR_SomarNumeros() {
