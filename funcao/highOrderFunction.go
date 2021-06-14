@@ -69,7 +69,7 @@ func E4_ComoParametro_Correio(cep string, callback func(x Response)) {
 		fmt.Println(err.Error())
 	}
 	//Adicionando cabeçalhos
-	req.Header.Add("Accept", "application/json")
+	req.Header.Add("Accept", "application/json") //The Accept header is used to inform the server by the client that which content type is understandable by the client expressed as MIME-types
 	req.Header.Add("Content-Type", "application/json")
 
 	//Enviando requisição
