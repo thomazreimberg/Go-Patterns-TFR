@@ -53,5 +53,6 @@ func Run() {
 		return x * 4
 	}
 	fmt.Println(E3_ComoParametro_Map([]int {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, mapper))
-	E4_ComoParametro_Correio()
+	fmt.Println("E4_ComoParametro_Correio")
+	E4_ComoParametro_Correio("04895020", func(x Response) { fmt.Println(x) })
 }
