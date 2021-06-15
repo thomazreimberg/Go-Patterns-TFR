@@ -33,5 +33,5 @@ func Run() {
 	fmt.Println("Compound Looping")
 	x := [][]int{{1, 2}, {3, 4}}
 	E1_Somar_Matriz(x)
-	
+	E2_Ordenar([]int { 4, 6, 1, 3, 8, 7, 0, 9 })
 }
