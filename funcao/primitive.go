@@ -4,6 +4,7 @@ package funcao
 import (
 	"fmt"
 	"reflect"
+	"strconv"
 )
 
 func E1_OperadoresMatematicos() {
@@ -113,8 +114,8 @@ func E4_OutrosOperadores() {
 	x10 := reflect.TypeOf(10 + 20)
 	fmt.Println(x10)
 
-	var x16 int = 10       //00001010		(10)
-	var x17 int = x16 << 2 // 00010100     (20)
+	var x16 int = 10       // 00001010		(10)
+	var x17 int = x16 << 2 // 00010100     (40)
 	fmt.Println(x16)
 	fmt.Println(x17)
 
@@ -125,11 +126,10 @@ func E4_OutrosOperadores() {
 
 	var x20 int = 10        // 00001010     (10)
 	var x21 int = 6         // 00000110     (6)
-	var x22 int = x20 | x21 // 00000010     (2)
-	var x23 int = x20 & x21 // 00001110     (14)
-	fmt.Println(x20)
-	fmt.Println(x21)
-	fmt.Println(x22)
-	fmt.Println(x23)
-
+	var x22 int = x20 | x21 // 00001110     (14)
+	var x23 int = x20 & x21 // 00000010     (2)
+	fmt.Println([]byte(strconv.Itoa(x20)))
+	fmt.Println([]byte(strconv.Itoa(x21)))
+	fmt.Println([]byte(strconv.Itoa(x22)))
+	fmt.Println([]byte(strconv.Itoa(x23)))
 }
