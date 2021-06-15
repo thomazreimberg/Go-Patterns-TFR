@@ -22,21 +22,21 @@ func Run() {
 	E5_FuncoesParaConversao()
 
 	fmt.Println("Procedure")
-	fmt.Println(E1_AreaRetangulo(10,10))
-	fmt.Println(E2_Media(10, 10, 10))
-	fmt.Println(E3_Hipontenusa(4, 5))
+	fmt.Println(E1_AreaRetangulo(10,5))
+	fmt.Println(E2_Media(4, 6, 8))
+	fmt.Println(E3_Hipontenusa(3, 4))
 	fmt.Println(E4_PrimeiroNome("Thomaz Henrique"))
 	fmt.Println(E5_PrimeiroDiaProximoMes(time.Now()))
-	fmt.Println(E6_AreaRetangulo(Retangulo { Altura: 10, Base:  10 }))
-	fmt.Println(E7_Bhaskara(10, 10, 10))
+	fmt.Println(E6_AreaRetangulo(Retangulo { Altura: 10, Base:  5 }))
+	fmt.Println(E7_Bhaskara(4, 2, -6))
 
 	fmt.Println("CompoundProcedure")
 	fmt.Println(E1_AreaRetanguloCP(2, 10))
 	fmt.Println(E2_RetangulosIguais(Retangulo{ Altura: 2, Base: 10 }, Retangulo{ Altura: 4, Base: 5 }))
 	fmt.Println(E3_RetangulosIguais([]Retangulo {
-		{Altura: 10, Base: 20},
-		{Altura: 20, Base: 10},
-		{Altura: 200, Base: 1},
+		{Altura: 2, Base: 10},
+		{Altura: 4, Base: 5},
+		{Altura: 1, Base: 20},
 	}))
 
 	fmt.Println("Packages")
