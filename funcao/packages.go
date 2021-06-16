@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"math"
 	"time"
+	"strconv"
 )
 
 type Pedido struct {
@@ -45,4 +46,18 @@ func E4_ValorFrete(distancia int) float64 {
 
 func E5_ValorJuros(valor float64, parcelas int) float64 {
 	return valor * math.Pow(1.05, float64(parcelas))
+}
+
+type Aluno struct {
+    nome string
+    curso string
+    semestre int
+}
+
+func (i Aluno) Mensagem() {
+    fmt.Println(i.nome + " está cursando " + i.curso + " no " + strconv.Itoa(i.semestre) + "º semestre")
+}
+
+func (i *Aluno) AtualizarSemestre(semestre int) {
+    i.semestre = semestre
 }
