@@ -13,6 +13,7 @@ func Run() {
 	E5_Inferencia()
 
 	fmt.Println("Compound")
+	E0_CopiaValorCopiaReferencia()
 	E1_DeclaracaoC()
 	E2_ValoresNull()
 	E3_TiposAnonimos()

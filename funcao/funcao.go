@@ -23,18 +23,18 @@ func Run() {
 	E5_FuncoesParaConversao()
 
 	fmt.Println("Procedure")
-	fmt.Println(E1_AreaRetangulo(10,5))
+	fmt.Println(E1_AreaRetangulo(10, 5))
 	fmt.Println(E2_Media(4, 6, 8))
 	fmt.Println(E3_Hipontenusa(3, 4))
 	fmt.Println(E4_PrimeiroNome("Thomaz Henrique"))
 	fmt.Println(E5_PrimeiroDiaProximoMes(time.Now()))
-	fmt.Println(E6_AreaRetangulo(Retangulo { Altura: 10, Base:  5 }))
+	fmt.Println(E6_AreaRetangulo(Retangulo{Altura: 10, Base: 5}))
 	fmt.Println(E7_Bhaskara(4, 2, -6))
 
 	fmt.Println("CompoundProcedure")
 	fmt.Println(E1_AreaRetanguloCP(2, 10))
-	fmt.Println(E2_RetangulosIguais(Retangulo{ Altura: 2, Base: 10 }, Retangulo{ Altura: 4, Base: 5 }))
-	fmt.Println(E3_RetangulosIguais([]Retangulo {
+	fmt.Println(E2_RetangulosIguais(Retangulo{Altura: 2, Base: 10}, Retangulo{Altura: 4, Base: 5}))
+	fmt.Println(E3_RetangulosIguais([]Retangulo{
 		{Altura: 2, Base: 10},
 		{Altura: 4, Base: 5},
 		{Altura: 1, Base: 20},
@@ -46,7 +46,7 @@ func Run() {
 	a.nome = "Felipe"
 	a.curso = "ADS"
 	a.semestre = 3
-	
+
 	a.AtualizarSemestre(4)
 	a.Mensagem()
 
@@ -61,11 +61,11 @@ func Run() {
 	filtro := func(x int) bool {
 		return x > 4
 	}
-	fmt.Println(E2_ComoParametro_Filter([]int {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, filtro))
+	fmt.Println(E2_ComoParametro_Filter([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, filtro))
 	mapper := func(x int) int {
 		return x * 4
 	}
-	fmt.Println(E3_ComoParametro_Map([]int {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, mapper))
+	fmt.Println(E3_ComoParametro_Map([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, mapper))
 	fmt.Println("E4_ComoParametro_Correio")
 	E4_ComoParametro_Correio("04895020", func(x Response) { fmt.Println(x) })
 }
