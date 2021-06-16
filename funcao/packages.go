@@ -54,8 +54,8 @@ type Aluno struct {
     semestre int
 }
 
-func (i Aluno) Mensagem(a Aluno) {
-    fmt.Println(a.nome + " está cursando " + a.curso + " no " + strconv.Itoa(a.semestre) + "º semestre")
+func (i Aluno) Mensagem() {
+    fmt.Println(i.nome + " está cursando " + i.curso + " no " + strconv.Itoa(i.semestre) + "º semestre")
 }
 
 func (i *Aluno) AtualizarSemestre(semestre int) {

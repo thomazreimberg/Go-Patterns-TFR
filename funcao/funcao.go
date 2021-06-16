@@ -46,9 +46,9 @@ func Run() {
 	a.nome = "Felipe"
 	a.curso = "ADS"
 	a.semestre = 3
-
+	
 	a.AtualizarSemestre(4)
-	a.Mensagem(a)
+	a.Mensagem()
 
 	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
