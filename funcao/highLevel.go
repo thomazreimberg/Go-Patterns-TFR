@@ -7,6 +7,7 @@ import (
 	"strings"
 	"time"
 	"strconv"
+	"github.com/ahmetb/go-linq/v3"
 )
 
 func E1_FuncoesParaNumeros() {
@@ -81,9 +82,29 @@ func E3_FuncoesParaData() {
 	fmt.Println(x9)
 }
 
+type Carro struct {
+	ano int
+	dono, modelo string
+}
+
 func E4_FuncoesParaTiposRecursivos() {
 	fmt.Println("A linguagem Go não dá suporte para funções LINQ. Tenha acesso a essas funções por meio do packages externas: https://github.com/ahmetb/go-linq")
-	fmt.Println("Fazer exemplo")
+	//Importa: go get github.com/ahmetb/go-linq/v3
+	//Pega a versão mais recente dos arquivos baixados: go get gopkg.in/ahmetb/go-linq.v3
+	var donos []string
+	carros := []Carro{
+		{ano: 2000, dono: "User 1", modelo: "Fiat" },
+		{ano: 2002, dono: "User 2", modelo: "Fiat 2" },
+		{ano: 2000, dono: "User 3", modelo: "Fiat" },
+	}
+
+	linq.From(carros).Where(func(c interface{}) bool{
+		return c.(Carro).ano >= 2001
+	}).Select(func(c interface{}) interface{} {
+		return c.(Carro).dono
+	}).ToSlice(&donos)
+
+	fmt.Println(donos)
 }
 
 func E5_FuncoesParaConversao() {
