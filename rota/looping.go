@@ -1,7 +1,7 @@
 //Thomaz
 package rota
-import "math"
 
+import "math"
 
 func E1_FOR_SomarNumeros(fim int) int {
 	soma := 0

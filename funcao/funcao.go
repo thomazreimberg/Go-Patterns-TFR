@@ -2,6 +2,7 @@ package funcao
 
 import (
 	"fmt"
+	// "sync/atomic"
 	"time"
 )
 
@@ -40,6 +41,15 @@ func Run() {
 	}))
 
 	fmt.Println("Packages")
+
+	var a Aluno
+	a.nome = "Felipe"
+	a.curso = "ADS"
+	a.semestre = 3
+
+	a.AtualizarSemestre(4)
+	a.Mensagem(a)
+
 	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
 	fmt.Println("Recursive")
