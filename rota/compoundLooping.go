@@ -9,7 +9,7 @@ func E1_Somar_Matriz(matriz [][]int) int {
             somar += matriz[iAux][jAux]
         }
     }
-	 fmt.Println(somar)
+	fmt.Println(somar)
 	 return somar
 }
 
@@ -23,5 +23,6 @@ func E2_Ordenar(numeros []int)[]int{
 			}
 		}
 	}
+	fmt.Println(numeros)
 	return numeros
 }
