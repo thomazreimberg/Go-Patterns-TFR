@@ -40,7 +40,7 @@ func Run() {
 		{Altura: 1, Base: 20},
 	}))
 
-	fmt.Println("Packages")
+	fmt.Println("Packages")//Parou em package
 
 	var a Aluno
 	a.nome = "Felipe"

@@ -35,7 +35,7 @@ func E4_PrimeiroNome(nome string) string {
 }
 
 func E5_PrimeiroDiaProximoMes(dia time.Time) time.Time {
-	return dia.AddDate(0, 1, 0).AddDate(0, 0, -dia.Day() + 1)
+	return dia.AddDate(0, 1, 0).AddDate(0, 0, -dia.Day() + 1)//Mostrar
 }
 
 func E6_AreaRetangulo(ret Retangulo) int {

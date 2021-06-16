@@ -77,7 +77,7 @@ func E2_Alteracao() {
 func E3_Conversao() {
 	var x string = "10.5"
 	var y int = 10
-
+	
 	x0, _ := strconv.ParseBool(x)
 	fmt.Println(x0)
 
