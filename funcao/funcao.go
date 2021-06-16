@@ -39,7 +39,7 @@ func Run() {
 		{Altura: 1, Base: 20},
 	}))
 
-	fmt.Println("Packages")
+	fmt.Println("Packages")//Parou em package
 	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
 	fmt.Println("Recursive")

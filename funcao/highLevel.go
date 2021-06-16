@@ -53,7 +53,7 @@ func E2_FuncoesParaTextos() {
 
 	var x10 []string = []string{"Olá,", "tudo", "bem?"}
 	fmt.Println(x10)
-	var x11 string = strings.Join(x10, " ")
+	var x11 string = strings.Join(x10, "-")
 	fmt.Println(x11)
 
 }
@@ -83,6 +83,7 @@ func E3_FuncoesParaData() {
 
 func E4_FuncoesParaTiposRecursivos() {
 	fmt.Println("A linguagem Go não dá suporte para funções LINQ. Tenha acesso a essas funções por meio do packages externas: https://github.com/ahmetb/go-linq")
+	fmt.Println("Fazer exemplo")
 }
 
 func E5_FuncoesParaConversao() {
