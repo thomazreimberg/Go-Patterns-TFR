@@ -15,6 +15,36 @@ type Familia struct {
 	mae Pessoa
 }
 
+type Aluno struct {
+	nome     string
+	curso    string
+	semestre int
+}
+
+func E0_CopiaValorCopiaReferencia() {
+	a := Aluno{
+		nome:     "Felipe",
+		curso:    "ADS",
+		semestre: 3,
+	}
+
+	var b Aluno = a
+
+	b.nome = "Jonathan"
+
+	fmt.Println(a.nome) // Felipe
+	fmt.Println(b.nome) // Jonathan
+
+	var c *Aluno
+	c = &a
+
+	c.nome = "Carlos"
+
+	fmt.Println(a.nome) // Carlos
+	fmt.Println(c.nome) // Carlos
+
+}
+
 func E1_DeclaracaoC() {
 	//
 	var pessoa Pessoa

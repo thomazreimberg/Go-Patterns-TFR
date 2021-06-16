@@ -4,8 +4,8 @@ package funcao
 import (
 	"fmt"
 	"math"
-	"time"
 	"strconv"
+	"time"
 )
 
 type Pedido struct {
@@ -49,15 +49,15 @@ func E5_ValorJuros(valor float64, parcelas int) float64 {
 }
 
 type Aluno struct {
-    nome string
-    curso string
-    semestre int
+	nome     string
+	curso    string
+	semestre int
 }
 
 func (i Aluno) Mensagem() {
-    fmt.Println(i.nome + " está cursando " + i.curso + " no " + strconv.Itoa(i.semestre) + "º semestre")
+	fmt.Println(i.nome + " está cursando " + i.curso + " no " + strconv.Itoa(i.semestre) + "º semestre")
 }
 
 func (i *Aluno) AtualizarSemestre(semestre int) {
-    i.semestre = semestre
+	i.semestre = semestre
 }
