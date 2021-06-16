@@ -40,10 +40,7 @@ func Run() {
 		{Altura: 1, Base: 20},
 	}))
 
-<<<<<<< HEAD
 	fmt.Println("Packages")//Parou em package
-=======
-	fmt.Println("Packages")
 
 	var a Aluno
 	a.nome = "Felipe"
@@ -53,7 +50,6 @@ func Run() {
 	a.AtualizarSemestre(4)
 	a.Mensagem()
 
->>>>>>> 44f06df13bd70b8b08dcdaa1db44ae53b75300a2
 	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
 	fmt.Println("Recursive")
