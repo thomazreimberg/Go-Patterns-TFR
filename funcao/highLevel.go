@@ -97,13 +97,13 @@ func E4_FuncoesParaTiposRecursivos() {
 		{ano: 2002, dono: "User 2", modelo: "Fiat 2" },
 		{ano: 2000, dono: "User 3", modelo: "Fiat" },
 	}
-
+	
 	linq.From(carros).Where(func(c interface{}) bool{
 		return c.(Carro).ano >= 2001
 	}).Select(func(c interface{}) interface{} {
 		return c.(Carro).dono
 	}).ToSlice(&donos)
-
+	
 	fmt.Println(donos)
 }
 

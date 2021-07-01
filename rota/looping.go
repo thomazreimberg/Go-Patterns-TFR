@@ -14,7 +14,8 @@ func E1_FOR_SomarNumeros(fim int) int {
 
 func E2_FOREACH_FiltrarPares(numeros []int) []int {
 	var pares []int
-
+	//0: "Carro 1"
+	//1: "Carro 2"
 	for _, item := range numeros {
 		if (item % 2 == 0) {
 			pares = append(pares, item)

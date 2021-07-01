@@ -50,7 +50,7 @@ func Run() {
 	a.AtualizarSemestre(4)
 	a.Mensagem()
 
-	E1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
+	e1_CalcularCompra(Pedido{Valor: 1000, AnosGarantia: 2, DistanciaEntregaKm: 10, Parcelas: 10}, 20.0)
 
 	fmt.Println("Recursive")
 	fmt.Println(E1_Fatorial_Linear(5))
@@ -68,4 +68,6 @@ func Run() {
 	fmt.Println(E3_ComoParametro_Map([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, mapper))
 	fmt.Println("E4_ComoParametro_Correio")
 	E4_ComoParametro_Correio("04895020", func(x Response) { fmt.Println(x) })
+
+	
 }

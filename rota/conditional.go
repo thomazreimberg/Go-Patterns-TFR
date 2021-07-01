@@ -17,7 +17,7 @@ func E1_IF_Aprovado(media float64) string {
 
 func E2_IF_Aprovado(media float64, faltas int) string {
 	situacao := "Reprovado"
-
+	
 	if media < 5 && faltas >= 25 {
 		situacao = "Reprovado por nota e falta"
 	} else if faltas > 25 {

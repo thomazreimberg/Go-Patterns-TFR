@@ -35,7 +35,7 @@ func E0_CopiaValorCopiaReferencia() {
 	fmt.Println(a.nome) // Felipe
 	fmt.Println(b.nome) // Jonathan
 
-	var c *Aluno
+	var c* Aluno
 	c = &a
 
 	c.nome = "Carlos"

@@ -64,7 +64,7 @@ func E4_ComoParametro_Correio(cep string, callback func(x Response)) {
 	client := &http.Client{} //Criei um client para ter controle sobre cabaçalhos HTTP, política de redirecionamento e outras configs
 	//se não não querer fazer esse controle http.Get (" http://example.com/ ") já resolveria o problema
 	req, err := http.NewRequest("GET", "https://viacep.com.br/ws/"+ strings.TrimSpace(cep)+"/json/", nil) //Monta a requisição
-
+	
 	if (err != nil) {
 		fmt.Println(err.Error())
 	}

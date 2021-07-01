@@ -3,8 +3,8 @@ package funcao
 
 import (
 	"fmt"
-	"math"
 	"strconv"
+	"math"
 	"time"
 )
 
@@ -20,7 +20,7 @@ type Nota struct {
 	NotaFiscal string
 }
 
-func E1_CalcularCompra(pedido Pedido, cupom float64) Nota {
+func e1_CalcularCompra(pedido Pedido, cupom float64) Nota {
 	nota := Nota{
 		ValorFinal: E5_ValorJuros(pedido.Valor-
 			E2_ValorDesconto(pedido.Valor, cupom)+
@@ -61,3 +61,4 @@ func (i Aluno) Mensagem() {
 func (i *Aluno) AtualizarSemestre(semestre int) {
 	i.semestre = semestre
 }
+
